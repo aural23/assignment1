@@ -1,40 +1,57 @@
-
 <section class="mat-typography title-group">
   <h1><b> &nbsp; &nbsp;CONTACT ME</b></h1>
   <mat-divider></mat-divider>
 </section>
 
 <div class="container">
-    <mat-card>
+  <mat-card>
 
-      <mat-card-content>
-        <div class="contact-form">
-          <form >
-            <mat-form-field appearance="outline">
-              <mat-label>First Name</mat-label>
-              <mat-label>Laura Tatiana Lizarazo Cufino</mat-label>
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-              <mat-label>Last Name</mat-label>
-              <input matInput  placeholder="Last Name">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-              <mat-label>Contact Number</mat-label>
-              <input matInput formControlName="contactNumber" placeholder="Contact Number">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-              <mat-label>Email Address</mat-label>
-              <input matInput formControlName="email" placeholder="Email Address">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-              <mat-label>Message</mat-label>
-              <textarea matInput formControlName="message" placeholder="Message" rows="4"></textarea>
-            </mat-form-field>
-            <button mat-raised-button color="primary" >Send Message</button>
-          </form>
-        </div>
-        
+    <mat-card-content>
+      <div class="contact-form">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="First Name">
+            <mat-icon matSuffix>person</mat-icon>
+            <mat-hint>Type your first Name</mat-hint>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Type your last Name</mat-hint>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Telephone</mat-label>
+            <input matInput placeholder="Telephone">
+            <mat-icon matSuffix>phone</mat-icon>
+            <mat-hint>Type your phone numer</mat-hint>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" required>
+            <mat-icon matSuffix>mail</mat-icon>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field>
+            <mat-label>Enter your message</mat-label>
+            <textarea matInput placeholder="Type here...." required></textarea>
        
-      </mat-card-content>
-    </mat-card>
+          </mat-form-field>
+        </p>
+
+        <button mat-raised-button color="primary">Send Message</button>
+
+      </div>
+
+
+    </mat-card-content>
+  </mat-card>
 </div>
