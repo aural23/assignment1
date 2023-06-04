@@ -1,0 +1,40 @@
+
+<section class="mat-typography title-group">
+  <h1><b> &nbsp; &nbsp;CONTACT ME</b></h1>
+  <mat-divider></mat-divider>
+</section>
+
+<div class="container">
+    <mat-card>
+
+      <mat-card-content>
+        <div class="contact-form">
+          <form >
+            <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <mat-label>Laura Tatiana Lizarazo Cufino</mat-label>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input matInput  placeholder="Last Name">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Contact Number</mat-label>
+              <input matInput formControlName="contactNumber" placeholder="Contact Number">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Email Address</mat-label>
+              <input matInput formControlName="email" placeholder="Email Address">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Message</mat-label>
+              <textarea matInput formControlName="message" placeholder="Message" rows="4"></textarea>
+            </mat-form-field>
+            <button mat-raised-button color="primary" >Send Message</button>
+          </form>
+        </div>
+        
+       
+      </mat-card-content>
+    </mat-card>
+</div>
