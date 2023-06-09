@@ -3,20 +3,22 @@ import { MatSidenav } from '@angular/material/sidenav';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss', 
+  '../assets/vendor/aos/aos.css',
+  '../assets/vendor/bootstrap/css/bootstrap.min.css',
+  '../assets/vendor/bootstrap-icons/bootstrap-icons.css',
+  '../assets/vendor/boxicons/css/boxicons.min.css',
+  '../assets/vendor/glightbox/css/glightbox.min.css',
+  '../assets/vendor/swiper/swiper-bundle.min.css',
+  '../assets/css/style.css'
+]
 })
 export class AppComponent {
   opened = true;
   @ViewChild('sidenav', { static: true }) sidenav!: MatSidenav;
   ngOnInit() {
     console.log(window.innerWidth)
-    if (window.innerWidth < 768) {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = false;
-    } else {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = true;
-    }
+  
   }
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
