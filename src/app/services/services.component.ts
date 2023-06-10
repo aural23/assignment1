@@ -5,7 +5,6 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss',
-  '../../assets/vendor/bootstrap/css/bootstrap.min.css',
   '../../assets/css/style.css'
 ]
 })

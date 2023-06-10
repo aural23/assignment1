@@ -5,10 +5,7 @@ import { MatSidenav } from '@angular/material/sidenav';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss', 
  
-  '../assets/vendor/bootstrap/css/bootstrap.min.css',
-  '../assets/vendor/bootstrap-icons/bootstrap-icons.css',
-  '../assets/vendor/glightbox/css/glightbox.min.css',
-  '../assets/css/style.css'
+  '../assets/vendor/bootstrap/css/bootstrap.min.css'
 ]
 })
 export class AppComponent {
