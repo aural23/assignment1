@@ -3,10 +3,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', 
- 
-  '../assets/vendor/bootstrap/css/bootstrap.min.css'
-]
+  styleUrls: ['./app.component.scss', '../assets/css/style.css']
 })
 export class AppComponent {
   opened = true;
